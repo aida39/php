@@ -1,5 +1,5 @@
 <?php
-$a=7;
+$a=70;
 
-$result=$a==7? "正解です":"不正解";
-print $result;
+$result=($a==7) ? "TRUE":"FALSE";
+echo    $result;

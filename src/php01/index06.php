@@ -1,14 +1,16 @@
 <?php
-
-function exam($score1, $score2, $score3)
-{
-  $total = $score1 + $score2 + $score3;
-  if ($total > 210) {
-    echo "合計点は".$total . "点なので合格です";
-  } else {
-    echo $total . "点なので不合格です";
-  }
+function triangle($ground,$height){
+  return $ground*$height/2;
 }
-echo exam(80, 60, 90);
 
+function square($vertical,$horizon){
+  return $vertical*$horizon/2;
+}
 
+function base($up,$down,$high){
+  return ($up+$down)*$high/2;
+}
+
+echo "三角形の面積は".triangle(10,10) . "<br>";
+echo "四角形の面積は" .square(5,10) .  "<br>";
+echo "台形の面積は" .base(10,10,10) .  "<br>";
